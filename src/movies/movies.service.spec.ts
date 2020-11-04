@@ -98,7 +98,7 @@ describe('MoviesService', () => {
       expect(movie.title).toEqual('Updated Test');
     });
 
-    it('should return a 404', () => {
+    it('should throw a NotFoundException', () => {
       try {
         service.deleteOne(12312);
       } catch (error) {
